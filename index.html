@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>KungBuilder</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- top contact on website -->
+        <div class="top-contact">
+            <div class="contact-con">
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-content-top">
+                        <p>Call Us :</p>
+                        <button class="contact-btn" onclick="copyText('061-556-9001')">061-556-9001</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="contact-content-top">
+                        <p>Email :</p>
+                        <button class="contact-btn"
+                            onclick="copyText('kungbuilder@gmail.com')">kungbuilder@gmail.com</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-brands fa-line"></i>
+                    <div class="contact-content-top">
+                        <p>Line ID :</p>
+                        <button class="contact-btn" onclick="copyText('@kungbuilder')">@kungbuilder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-con">
+                <a href="index.html">
+                    <h1 class="logo">KungBuilder</h1>
+                </a>
+                <button class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></i></button>
+                <div class="navbar">
+                    <div class="close-con"><button class="close-btn" onclick=""><i
+                                class="fa-solid fa-xmark"></i></button></div>
+                    <div class="nav-collaps">
+                        <ul class="nav-ul">
+                            <li><a href="#" class="home active">หน้าแรก</a></li>
+                            <li><a href="./component/about.html" class="about">เกี่ยวกับเรา</a></li>
+                            <li><a href="./component/service.html" class="service">บริการ</a></li>
+                            <li><a href="./component/project.html" class="project">ผลงาน</a></li>
+                            <li><a href="./component/contact.html" class="contact">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <button id="lang-th" class="lang-a active">TH</button>
+                        <p>|</p>
+                        <button id="lang-en" class="lang-a">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-image">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="./image/img-1.jpg" alt="Image 1">
+                <div class="image-content">
+                    <h2 class="company-h2">
+                        บริษัท กุ้งบิลเดอร์ จำกัด
+                    </h2>
+                    <p class="text hero-text-one">เราบริการสร้างบ้านครบวงจร บ้านสวย งานจบ งบไม่บานปลาย</p>
+                    <a href="#" class="button hero-btn-one">บริการ</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="./image/img-2.jpg" alt="Image 2">
+                <div class="image-content">
+                    <h2 class="hero-h2-two">
+                        บริการให้คำปรึกษาฟรี!
+                    </h2>
+                    <p class="text hero-text-two">จากประสบการณ์ของเรากว่า 10 ปี คุณจะได้รับคำแนะนำที่ดีอย่างแน่นอน
+                        คุณสามารถดูตัวอย่างโครงการของเราได้ที่นี่</p>
+                    <a href="#" class="button hero-btn-two">ผลงาน</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="./image/img-3.jpg" alt="Image 3">
+                <div class="image-content">
+                    <h2 class="hero-h2-three">
+                        ติดต่อหาเราตอนนี้เลย!
+                    </h2>
+                    <p class="text hero-text-three">คุณรออะไรอยู่? มาเริ่มสร้างบ้านสวยๆ ของคุณกันเถอะ
+                        ติดต่อเราคลิกที่นี่เลย</p>
+                    <a href="#" class="button hero-btn-three">ติดต่อเรา</a>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <div class="button">
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section class="about-section">
+        <div class="about-top-con">
+            <div class="about-heading">
+                <h2 class="company-name">บริษัท กุ้งบิลเดอร์ จำกัด</h2>
+                <p class="caption-company">"สร้างบ้านด้วยวัสดุคุณภาพ บริการระดับพรีเมี่ยม"</p>
+            </div>
+            <div class="about-cart-con">
+                <div class="about-cart">
+                    <div class="cart-image">
+                        <img src="./image/profesional.jpg" alt="profesional">
+                    </div>
+                    <h3 class="about-title-one">เป็นมืออาชีพ</h3>
+                    <p class="about-p-one">คุณจะได้บ้านที่มีมาตรฐานจากผู้เชี่ยวชาญของเรา ในราคาที่เหมาะสม
+                        มีปัญหาเราแก้ให้จนจบโดยไม่ทิ้งโครงการ</p>
+                </div>
+                <div class="about-cart">
+                    <div class="cart-image">
+                        <img src="./image/team.jpg" alt="team">
+                    </div>
+                    <h3 class="about-title-two">ทีมงานมากประสบการณ์</h3>
+                    <p class="about-p-two">บริษัท กุ้งบิลเดอร์ จำกัด มีผู้เชี่ยวชาญงานก่อสร้างและซ่อมแซมทุกประเภท
+                        เพื่อดูแลบ้านของคุณตั้งแต่ต้นจนจบ</p>
+                </div>
+                <div class="about-cart">
+                    <div class="cart-image">
+                        <img src="./image/materials.jpg" alt="materials">
+                    </div>
+                    <h3 class="about-title-three">วัสดุคุณภาพ</h3>
+                    <p class="about-p-three">ทุกโครงการของเรา ใช้วัสดุคุณภาพตามมาตรฐาน มอก. ทุกชิ้นมาพร้อมการรับประกัน 5
+                        ปี</p>
+                </div>
+                <div class="about-cart">
+                    <div class="cart-image">
+                        <img src="./image/img-2.jpg" alt="consultation">
+                    </div>
+                    <h3 class="about-title-four">ให้คำปรึกษาฟรี</h3>
+                    <p class="about-p-four">บริษัท กุ้งบิลเดอร์ จำกัด ให้บริการที่ปรึกษาโครงการ
+                        ไม่ว่าโครงการขนาดเล็กหรือใหญ่ การวิเคราะห์ประเมินราคา สำรวจ และออกแบบรายละเอียด</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-content-con">
+            <div class="about-bg">
+                <div class="about-bottom-con">
+                    <h2 class="history-title">ประวัติของเรา</h2>
+                    <p class="history-p-top">บริษัท กุ้งบิลเดอร์ จำกัด
+                        เป็นองค์กรออกแบบและก่อสร้างครบวงจรที่ให้บริการหลากหลายสาขา โดยมีประสบการณ์มากกว่า 10 ปี
+                        แนวทางปฏิบัติที่หลากหลายของเราประกอบด้วยบริการด้านสถาปัตยกรรมและวิศวกรรมที่ครอบคลุม
+                        รวมถึงบริการในสาขาวิชาที่เกี่ยวข้อง เช่น การวางแผน การออกแบบภายใน การออกแบบกราฟิก และการก่อสร้าง
+                        บริษัท กุ้งบิลเดอร์ จำกัด ประสบความสำเร็จในการมอบหมายงานที่หลากหลายให้กับนักพัฒนาและบริษัทใหญ่ๆ
+                        ทั้งในภาคเอกชนและในท้องถิ่น บริษัท กุ้งบิลเดอร์ จำกัด ก่อตั้งขึ้นในปี 2550
+                    </p>
+                    <ul>
+                        <li>
+                            <p class="history-p-one">ที่อยู่เลขที่ 135/278 หมู่ที่ 2 ต.ไทรม้า อ.เมือง จ.นนทบุรี 11000
+                            </p>
+                        </li>
+                        <li>
+                            <p class="history-p-two">โทรศัพท์: 061-556-9001</p>
+                        </li>
+                        <li>
+                            <p class="history-p-three">วัตถุประสงค์บริษัท: "One-Stop Service สำหรับงานก่อสร้างทั้งหมด"
+                            </p>
+                        </li>
+                        <li>
+                            <p class="history-p-four">คำขวัญ: "สร้างบ้านด้วยวัสดุคุณภาพ บริการระดับพรีเมี่ยม"</p>
+                        </li>
+                    </ul>
+                    <p class="history-p-bottom">บริษัท กุ้งบิลเดอร์ จำกัด มีสถาปนิก วิศวกร และผู้เชี่ยวชาญ เช่น
+                        ภูมิสถาปนิกผู้วางแผนร้านค้าปลีก นักออกแบบตกแต่งภายใน ผู้จัดการการก่อสร้าง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service-section -->
+    <section class="service-section">
+        <div class="service-con">
+            <div class="service-title-box">
+                <h2 class="service-title">บริการที่โดดเด่นของเรา</h2>
+            </div>
+            <div class="service-content-box">
+                <div class="service-cart-box">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-house-circle-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-one">บ้านสวยทันสมัย</h3>
+                            <p class="service-ct-one">เราจัดการสร้างบ้านสวยๆ ตามแบบบ้านที่ลูกค้าต้องการ</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-two">จัดการเอกสารให้ฟรี</h3>
+                            <p class="service-ct-two">เราดำเนินการขอน้ำประปา ไฟฟ้า และเอกสารที่เกี่ยวข้องฟรี</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-three">ทีมช่างคุณภาพ</h3>
+                            <p class="service-ct-three">เรามีทีมช่างที่ผ่านการคัดเลือกและมากด้วยประสบการณ์</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-four">ก่อสร้างรวดเร็ว</h3>
+                            <p class="service-ct-four">ใช้เวลาก่อสร้างรวดเร็ว สวยงาม แข็งแรง ทนทาน ได้มาตรฐาน</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-piggy-bank"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-five">ประหยัดงบ</h3>
+                            <p class="service-ct-five">จัดหาวัสดุที่มีคุณภาพในราคาประหยัด ดูแลการใช้วัสดุอย่างคุ้มค่า
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-six">ให้คำปรึกษาฟรี</h3>
+                            <p class="service-ct-six">บริษัท กุ้งบิลเดอร์ จำกัด
+                                ยินดีให้คำปรึกษาทุกเรื่องเกี่ยวกับการสร้างบ้านฟรี</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-img">
+                    <img src="./image/servicebg.png" alt="service">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="project-section">
+        <div class="project-con">
+            <div class="project-top">
+                <h2 class="project-title">แบบบ้านยอดนิยม</h2>
+                <div class="filter-btn">
+                    <button id="btn-all-2" class="btn active" onclick="filterManager2.filterSelection('all', 'filterDiv')">ทั้งหมด</button>
+                    <button id="btn-onef-2" class="btn" onclick="filterManager2.filterSelection('one', 'filterDiv')">แบบ 1 ชั้น</button>
+                    <button id="btn-twof-2" class="btn" onclick="filterManager2.filterSelection('two', 'filterDiv')">แบบ 2 ชั้น</button>
+                </div>
+            </div>
+            <div class="project-bottom">
+                <div class="house filterDiv one">
+                    <div class="project-img">
+                        <img src="./image/one-floor1_1.jpg" alt="one-floor1_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>One Floor 001</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="./component/houseModel.html" class="project-detail" id="one-floor-001">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="house filterDiv one">
+                    <div class="project-img">
+                        <img src="./image/one-floor2_1.jpg" alt="one-floor2_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>One Floor 002</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="./component/houseModel.html" class="project-detail" id="one-floor-002">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="house filterDiv two">
+                    <div class="project-img">
+                        <img src="./image/two-floor1_1.jpg" alt="two-floor1_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>Two Floor 001</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="./component/houseModel.html" class="project-detail" id="two-floor-001">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="house filterDiv two">
+                    <div class="project-img">
+                        <img src="./image/two-floor2_1.jpg" alt="two-floor2_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>Two Floor 002</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="./component/houseModel.html" class="project-detail" id="two-floor-002">รายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reference-section">
+        <div class="reference-con">
+            <div class="reference-top">
+                <h2 class="reference-title">ผลงานของเรา</h2>
+                <hr>
+                <h2 class="reference-title">REFERENCE</h2>
+            </div>
+            <div class="reference-img-con">
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference1.jpeg" onclick="openModel();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference2.jpg" onclick="openModel();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference3.jpg" onclick="openModel();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference4.jpg" onclick="openModel();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference5.jpg" onclick="openModel();currentSlide(5)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference6.jpeg" onclick="openModel();currentSlide(6)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference7.jpg" onclick="openModel();currentSlide(7)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference8.jpg" onclick="openModel();currentSlide(8)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference9.jpg" onclick="openModel();currentSlide(9)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference10.jpg" onclick="openModel();currentSlide(10)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference11.jpg" onclick="openModel();currentSlide(11)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="image/ImageGallery/reference12.jpg" onclick="openModel();currentSlide(12)"
+                        class="hover-shadow">
+                </div>
+            </div>
+        </div>
+        <div id="myModel" class="model">
+            <span class="close" onclick="closeModel()"><i class="fa-solid fa-xmark"></i></span>
+            <div class="model-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="image/ImageGallery/reference1.jpeg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="image/ImageGallery/reference2.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="image/ImageGallery/reference3.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="image/ImageGallery/reference4.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="image/ImageGallery/reference5.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="image/ImageGallery/reference6.jpeg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="image/ImageGallery/reference7.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="image/ImageGallery/reference8.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="image/ImageGallery/reference9.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="image/ImageGallery/reference10.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="image/ImageGallery/reference11.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="image/ImageGallery/reference12.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+    </section>
+
+    <!-- section contact -->
+    <section class="contact-section">
+        <div class="contact-scon">
+            <h2 class="contact-title">ติดต่อเรา บริษัท กุ้งบิลเดอร์ จำกัด</h2>
+            <div class="contact-content">
+                <p class="contact-p-one">บริษัท กุ้งบิลเดอร์ จำกัด โทรศัพท์ 061-556-9001 ติดต่อไลน์ไอดี @kungbuilder (คุณกุ้ง) หรือ ติดต่อตามที่อยู่นี้ เลขที่ 135/278 หมู่ที่ 2 ต.ไทรม้า อ.เมือง จ.นนทบุรี 11000 หรือ คลิกที่ปุ่มเหล่านี้
+                </p>
+            </div>
+            <div class="top-contact">
+                <div class="contact-con-two">
+                    <div class="contact-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-content-top">
+                            <p>Call Us :</p>
+                            <button class="contact-btn" onclick="copyText('061-556-9001')">061-556-9001</button>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="contact-content-top">
+                            <p>Email :</p>
+                            <button class="contact-btn"
+                                onclick="copyText('kungbuilder@gmail.com')">kungbuilder@gmail.com</button>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fa-brands fa-line"></i>
+                        <div class="contact-content-top">
+                            <p>Line ID :</p>
+                            <button class="contact-btn" onclick="copyText('@kungbuilder')">@kungbuilder</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-con">
+            <div class="footer-content">
+                <div class="footer-one">
+                    <h4 class="logo">KungBuilder</h4>
+                    <p class="fcaption-company">"สร้างบ้านด้วยวัสดุคุณภาพ บริการระดับพรีเมี่ยม"</p>
+                </div>
+                <div class="footer-two">
+                    <h4 class="ftwo-title">ติดต่อเรา</h4>
+                    <div class="ftwo-contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <button class="footer-num" onclick="copyText('061-556-9001')">061-556-9001</button>
+                        <p class="num-name">(คุณกุ้ง)</p>
+                    </div>
+                    <p class="ftwo-address">
+                        บริษัท กุ้งบิลเดอร์ จำกัด เลขที่ 135/278 หมู่ที่ 2 ตำบลไทรม้า อำเภอเมือง จังหวัดนนทบุรี 11000
+                    </p>
+                </div>
+                <div class="footer-three">
+                    <h4 class="fthree-title">ติดตามเรา</h4>
+                    <div class="ficon-box">
+                        <a class="footer-social" href="https://line.me/ti/p/~kungbuilder" target="_blank"><i class="fa-brands fa-line"></i></a>
+                        <a class="footer-social" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="footer-social" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="footer-social" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>COPYRIGHT &copy; 2023 , KUNG BUILDER CO.,LTD. ALL RIGHTS RESERVED.</p>
+                <p>Developed by Natthaphong</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- arrow back to top -->
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <!-- import modal.js -->
+    <script src="./js/model.js"></script>
+    <!-- import filter.js -->
+    <script src="./js/filter.js"></script>
+    <!-- import carousel.js -->
+    <script src="./js/carousel.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- import houseModel.js -->
+    <script src="../js/houseModel.js"></script>
+    <!-- import jquerytranlate.js -->
+    <script src="./js/jquerytranslate.js"></script>
+    <!-- import index.js -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

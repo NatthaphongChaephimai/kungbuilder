@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../index.css">
+
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>KungBuilder</title>
+</head>
+<body>
+
+    <header>
+        <!-- top contact on website -->
+        <div class="top-contact">
+            <div class="contact-con">
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-content-top">
+                        <p>Call Us :</p>
+                        <button class="contact-btn" onclick="copyText('061-556-9001')">061-556-9001</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="contact-content-top">
+                        <p>Email :</p>
+                        <button class="contact-btn"
+                            onclick="copyText('kungbuilder@gmail.com')">kungbuilder@gmail.com</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-brands fa-line"></i>
+                    <div class="contact-content-top">
+                        <p>Line ID :</p>
+                        <button class="contact-btn" onclick="copyText('@kungbuilder')">@kungbuilder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-con">
+                <a href="index.html">
+                    <h1 class="logo">KungBuilder</h1>
+                </a>
+                <button class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></i></button>
+                <div class="navbar">
+                    <div class="close-con"><button class="close-btn" onclick=""><i
+                                class="fa-solid fa-xmark"></i></button></div>
+                    <div class="nav-collaps">
+                        <ul class="nav-ul">
+                            <li><a href="../index.html" class="home">หน้าแรก</a></li>
+                            <li><a href="./about.html" class="about">เกี่ยวกับเรา</a></li>
+                            <li><a href="#" class="service active">บริการ</a></li>
+                            <li><a href="./project.html" class="project">ผลงาน</a></li>
+                            <li><a href="./contact.html" class="contact">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <button id="lang-th" class="lang-a active">TH</button>
+                        <p>|</p>
+                        <button id="lang-en" class="lang-a">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- service-section -->
+    <section class="service-section">
+        <div class="service-con">
+            <div class="service-title-box">
+                <h2 class="service-title">บริการที่โดดเด่นของเรา</h2>
+            </div>
+            <div class="service-content-box">
+                <div class="service-cart-box">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-house-circle-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-one">บ้านสวยทันสมัย</h3>
+                            <p class="service-ct-one">เราจัดการสร้างบ้านสวยๆ ตามแบบบ้านที่ลูกค้าต้องการ</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-two">จัดการเอกสารให้ฟรี</h3>
+                            <p class="service-ct-two">เราดำเนินการขอน้ำประปา ไฟฟ้า และเอกสารที่เกี่ยวข้องฟรี</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-three">ทีมช่างคุณภาพ</h3>
+                            <p class="service-ct-three">เรามีทีมช่างที่ผ่านการคัดเลือกและมากด้วยประสบการณ์</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-four">ก่อสร้างรวดเร็ว</h3>
+                            <p class="service-ct-four">ใช้เวลาก่อสร้างรวดเร็ว สวยงาม แข็งแรง ทนทาน ได้มาตรฐาน</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-piggy-bank"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-five">ประหยัดงบ</h3>
+                            <p class="service-ct-five">จัดหาวัสดุที่มีคุณภาพในราคาประหยัด ดูแลการใช้วัสดุอย่างคุ้มค่า
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-h3-six">ให้คำปรึกษาฟรี</h3>
+                            <p class="service-ct-six">บริษัท กุ้งบิลเดอร์ จำกัด ยินดีให้คำปรึกษาทุกเรื่องเกี่ยวกับการสร้างบ้านฟรี</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-img">
+                    <img src="../image/servicebg.png" alt="service">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="project-section">
+        <div class="project-con">
+            <div class="project-top">
+                <h2 class="project-title">แบบบ้านยอดนิยม</h2>
+                <div class="filter-btn">
+                    <button id="btn-all-1" class="btn active" onclick="filterManager1.filterSelection('all', 'filterService')">ทั้งหมด</button>
+                    <button id="btn-onef-1" class="btn" onclick="filterManager1.filterSelection('one', 'filterService')">แบบ 1 ชั้น</button>
+                    <button id="btn-twof-1" class="btn" onclick="filterManager1.filterSelection('two', 'filterService')">แบบ 2 ชั้น</button>
+                </div>
+            </div>
+            <div class="project-bottom">
+                <div class="house filterService one">
+                    <div class="project-img">
+                        <img src="../image/one-floor1_1.jpg" alt="one-floor1_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>One Floor 001</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="houseModel.html" class="project-detail" id="one-floor-001s">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="house filterService one">
+                    <div class="project-img">
+                        <img src="../image/one-floor2_1.jpg" alt="one-floor2_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>One Floor 002</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="houseModel.html" class="project-detail" id="one-floor-002s">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="house filterService two">
+                    <div class="project-img">
+                        <img src="../image/two-floor1_1.jpg" alt="two-floor1_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>Two Floor 001</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="houseModel.html" class="project-detail" id="two-floor-001s">รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="house filterService two">
+                    <div class="project-img">
+                        <img src="../image/two-floor2_1.jpg" alt="two-floor2_1">
+                    </div>
+                    <div class="project-name">
+                        <h3>Two Floor 002</h3>
+                    </div>
+                    <div class="project-btn">
+                        <a href="houseModel.html" class="project-detail" id="two-floor-002s">รายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-con">
+            <div class="footer-content">
+                <div class="footer-one">
+                    <h4 class="logo">KungBuilder</h4>
+                    <p class="fcaption-company">"สร้างบ้านด้วยวัสดุคุณภาพ บริการระดับพรีเมี่ยม"</p>
+                </div>
+                <div class="footer-two">
+                    <h4 class="ftwo-title">ติดต่อเรา</h4>
+                    <div class="ftwo-contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <button class="footer-num" onclick="copyText('061-556-9001')">061-556-9001</button>
+                        <p class="num-name">(คุณกุ้ง)</p>
+                    </div>
+                    <p class="ftwo-address">
+                        บริษัท กุ้งบิลเดอร์ จำกัด เลขที่ 135/278 หมู่ที่ 2 ตำบลไทรม้า อำเภอเมือง จังหวัดนนทบุรี 11000
+                    </p>
+                </div>
+                <div class="footer-three">
+                    <h4 class="fthree-title">ติดตามเรา</h4>
+                    <div class="ficon-box">
+                        <a class="footer-social" href="https://line.me/ti/p/~kungbuilder" target="_blank"><i class="fa-brands fa-line"></i></a>
+                        <a class="footer-social" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="footer-social" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="footer-social" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>COPYRIGHT &copy; 2023 , KUNG BUILDER CO.,LTD. ALL RIGHTS RESERVED.</p>
+                <p>Developed by Natthaphong</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- arrow back to top -->
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <!-- import filter.js -->
+    <script src="../js/filter.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- import houseModel.js -->
+    <script src="../js/houseModel.js"></script>
+    <!-- import jquerytranlate.js -->
+    <script src="../js/jquerytranslate.js"></script>
+    <!-- import index.js -->
+    <script src="../js/index.js"></script>
+</body>
+</html>

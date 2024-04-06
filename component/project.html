@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../index.css">
+
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>KungBuilder</title>
+</head>
+<body>
+
+    <header>
+        <!-- top contact on website -->
+        <div class="top-contact">
+            <div class="contact-con">
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-content-top">
+                        <p>Call Us :</p>
+                        <button class="contact-btn" onclick="copyText('061-556-9001')">061-556-9001</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="contact-content-top">
+                        <p>Email :</p>
+                        <button class="contact-btn"
+                            onclick="copyText('kungbuilder@gmail.com')">kungbuilder@gmail.com</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-brands fa-line"></i>
+                    <div class="contact-content-top">
+                        <p>Line ID :</p>
+                        <button class="contact-btn" onclick="copyText('@kungbuilder')">@kungbuilder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-con">
+                <a href="index.html">
+                    <h1 class="logo">KungBuilder</h1>
+                </a>
+                <button class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></i></button>
+                <div class="navbar">
+                    <div class="close-con"><button class="close-btn" onclick=""><i
+                                class="fa-solid fa-xmark"></i></button></div>
+                    <div class="nav-collaps">
+                        <ul class="nav-ul">
+                            <li><a href="../index.html" class="home">หน้าแรก</a></li>
+                            <li><a href="./about.html" class="about">เกี่ยวกับเรา</a></li>
+                            <li><a href="./service.html" class="service">บริการ</a></li>
+                            <li><a href="#" class="project active">ผลงาน</a></li>
+                            <li><a href="./contact.html" class="contact">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <button id="lang-th" class="lang-a active">TH</button>
+                        <p>|</p>
+                        <button id="lang-en" class="lang-a">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="reference-section">
+        <div class="reference-con">
+            <div class="reference-top">
+                <h2 class="reference-title">ผลงานของเรา</h2>
+                <hr>
+                <h2 class="reference-title">REFERENCE</h2>
+            </div>
+            <div class="reference-img-con">
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference1.jpeg" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference2.jpg" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference3.jpg" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference4.jpg" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference5.jpg" onclick="openModal();currentSlide(5)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference6.jpeg" onclick="openModal();currentSlide(6)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference7.jpg" onclick="openModal();currentSlide(7)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference8.jpg" onclick="openModal();currentSlide(8)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference9.jpg" onclick="openModal();currentSlide(9)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference10.jpg" onclick="openModal();currentSlide(10)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference11.jpg" onclick="openModal();currentSlide(11)"
+                        class="hover-shadow">
+                </div>
+                <div class="reference-img">
+                    <img src="../image/ImageGallery/reference12.jpg" onclick="openModal();currentSlide(12)"
+                        class="hover-shadow">
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="../image/ImageGallery/reference1.jpeg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ๋ เจดีย์</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="../image/ImageGallery/reference2.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณตี๋ ดีใจ</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="../image/ImageGallery/reference3.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ็ม เต็มที่</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="../image/ImageGallery/reference4.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเอ บีซี</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="../image/ImageGallery/reference5.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณดี ใจใหญ่</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="../image/ImageGallery/reference6.jpeg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเจ ชนาทิป</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="../image/ImageGallery/reference7.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณกก การเขียน</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="../image/ImageGallery/reference8.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณวายุ คีรี</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="../image/ImageGallery/reference9.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณไนซ์ วานร</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="../image/ImageGallery/reference10.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณอาร์ม นายทุน</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="../image/ImageGallery/reference11.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณเก๋ มานะ</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="../image/ImageGallery/reference12.jpg">
+                    <div class="caption-container">
+                        <p class="caption">บ้านคุณสุดา มานี</p>
+                    </div>
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-con">
+            <div class="footer-content">
+                <div class="footer-one">
+                    <h4 class="logo">KungBuilder</h4>
+                    <p class="fcaption-company">"สร้างบ้านด้วยวัสดุคุณภาพ บริการระดับพรีเมี่ยม"</p>
+                </div>
+                <div class="footer-two">
+                    <h4 class="ftwo-title">ติดต่อเรา</h4>
+                    <div class="ftwo-contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <button class="footer-num" onclick="copyText('061-556-9001')">061-556-9001</button>
+                        <p class="num-name">(คุณกุ้ง)</p>
+                    </div>
+                    <p class="ftwo-address">
+                        บริษัท กุ้งบิลเดอร์ จำกัด เลขที่ 135/278 หมู่ที่ 2 ตำบลไทรม้า อำเภอเมือง จังหวัดนนทบุรี 11000
+                    </p>
+                </div>
+                <div class="footer-three">
+                    <h4 class="fthree-title">ติดตามเรา</h4>
+                    <div class="ficon-box">
+                        <a class="footer-social" href="https://line.me/ti/p/~kungbuilder" target="_blank"><i class="fa-brands fa-line"></i></a>
+                        <a class="footer-social" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="footer-social" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="footer-social" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>COPYRIGHT &copy; 2023 , KUNG BUILDER CO.,LTD. ALL RIGHTS RESERVED.</p>
+                <p>Developed by Natthaphong</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- arrow back to top -->
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- import jquerytranlate.js -->
+    <script src="../js/jquerytranslate.js"></script>
+    <!-- import index.js -->
+    <script src="../js/index.js"></script>
+</body>
+</html>

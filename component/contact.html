@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../index.css">
+
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>KungBuilder</title>
+</head>
+<body>
+
+    <header>
+        <!-- top contact on website -->
+        <div class="top-contact">
+            <div class="contact-con">
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-content-top">
+                        <p>Call Us :</p>
+                        <button class="contact-btn" onclick="copyText('061-556-9001')">061-556-9001</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="contact-content-top">
+                        <p>Email :</p>
+                        <button class="contact-btn"
+                            onclick="copyText('kungbuilder@gmail.com')">kungbuilder@gmail.com</button>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-brands fa-line"></i>
+                    <div class="contact-content-top">
+                        <p>Line ID :</p>
+                        <button class="contact-btn" onclick="copyText('@kungbuilder')">@kungbuilder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-con">
+                <a href="index.html">
+                    <h1 class="logo">KungBuilder</h1>
+                </a>
+                <button class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></i></button>
+                <div class="navbar">
+                    <div class="close-con"><button class="close-btn" onclick=""><i
+                                class="fa-solid fa-xmark"></i></button></div>
+                    <div class="nav-collaps">
+                        <ul class="nav-ul">
+                            <li><a href="../index.html" class="home">หน้าแรก</a></li>
+                            <li><a href="./about.html" class="about">เกี่ยวกับเรา</a></li>
+                            <li><a href="./service.html" class="service">บริการ</a></li>
+                            <li><a href="./project.html" class="project">ผลงาน</a></li>
+                            <li><a href="#" class="contact active">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <button id="lang-th" class="lang-a active">TH</button>
+                        <p>|</p>
+                        <button id="lang-en" class="lang-a">EN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section contact -->
+    <section class="contact-section">
+        <div class="contact-scon">
+            <h2 class="contact-title">ติดต่อเรา บริษัท กุ้งบิลเดอร์ จำกัด</h2>
+            <div class="contact-content">
+                <p class="contact-p-one">บริษัท กุ้งบิลเดอร์ จำกัด โทรศัพท์ 061-556-9001 ติดต่อไลน์ไอดี @kungbuilder (คุณกุ้ง) หรือ ติดต่อตามที่อยู่นี้ เลขที่ 135/278 หมู่ที่ 2 ต.ไทรม้า อ.เมือง จ.นนทบุรี 11000 หรือ คลิกที่ปุ่มเหล่านี้
+                </p>
+            </div>
+            <div class="top-contact">
+                <div class="contact-con-two">
+                    <div class="contact-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-content-top">
+                            <p>Call Us :</p>
+                            <button class="contact-btn" onclick="copyText('061-556-9001')">061-556-9001</button>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="contact-content-top">
+                            <p>Email :</p>
+                            <button class="contact-btn"
+                                onclick="copyText('kungbuilder@gmail.com')">kungbuilder@gmail.com</button>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="fa-brands fa-line"></i>
+                        <div class="contact-content-top">
+                            <p>Line ID :</p>
+                            <button class="contact-btn" onclick="copyText('@kungbuilder')">@kungbuilder</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-con">
+            <div class="footer-content">
+                <div class="footer-one">
+                    <h4 class="logo">KungBuilder</h4>
+                    <p class="fcaption-company">"สร้างบ้านด้วยวัสดุคุณภาพ บริการระดับพรีเมี่ยม"</p>
+                </div>
+                <div class="footer-two">
+                    <h4 class="ftwo-title">ติดต่อเรา</h4>
+                    <div class="ftwo-contact-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <button class="footer-num" onclick="copyText('061-556-9001')">061-556-9001</button>
+                        <p class="num-name">(คุณกุ้ง)</p>
+                    </div>
+                    <p class="ftwo-address">
+                        บริษัท กุ้งบิลเดอร์ จำกัด เลขที่ 135/278 หมู่ที่ 2 ตำบลไทรม้า อำเภอเมือง จังหวัดนนทบุรี 11000
+                    </p>
+                </div>
+                <div class="footer-three">
+                    <h4 class="fthree-title">ติดตามเรา</h4>
+                    <div class="ficon-box">
+                        <a class="footer-social" href="https://line.me/ti/p/~kungbuilder" target="_blank"><i class="fa-brands fa-line"></i></a>
+                        <a class="footer-social" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="footer-social" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="footer-social" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>COPYRIGHT &copy; 2023 , KUNG BUILDER CO.,LTD. ALL RIGHTS RESERVED.</p>
+                <p>Developed by Natthaphong</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- arrow back to top -->
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- import jquerytranlate.js -->
+    <script src="../js/jquerytranslate.js"></script>
+    <!-- import index.js -->
+    <script src="../js/index.js"></script>
+</body>
+</html>
