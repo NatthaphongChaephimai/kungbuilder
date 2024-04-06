@@ -1,3 +1,18 @@
+let filters = document.querySelectorAll(".filter-btn button");
+
+filters.forEach(button => {
+  button.addEventListener("click",()=>{
+    resetFilters();
+    button.classList.add("active");
+  });
+});
+
+function resetFilters() {
+  filters.forEach(button => {
+    button.classList.remove("active");
+  });
+};
+
 class FilterManager {
     constructor() {}
   
